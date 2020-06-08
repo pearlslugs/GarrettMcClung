@@ -1,0 +1,189 @@
+@keyframes wobble {
+
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(1.3);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	70% {
+		transform: scale(1.4);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.bubbl-content {
+	height: 100vh;
+	width: 100vw;
+	background: rgba(180, 150, 255, 0.2);
+	overflow: scroll;
+}
+.bubbl-top-bar {
+	position: absolute;
+	top: 0px;
+	height: 10%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background: rgba(220, 210, 255, 1);
+}
+.bubbl-top-bar-content {
+	margin: auto;
+}
+.bubbl-top-bar-content:not(.bubbl-content-logo):hover {
+	cursor: pointer;
+	color: rgb(90, 180, 225);
+}
+.bubbl-content-logo {
+	font-size: 2em;
+	letter-spacing: 0.25em;
+	/*animation: wobble 5s infinite;*/
+	color: rgb(90, 180, 225);
+}
+.bubbl-greeting {
+	margin: 0.5rem 1rem;
+	font-size: 1.5rem;
+	margin-top: 6rem;
+}
+.make-post {
+	display: flex;
+	flex-direction: column;
+	height: 22%;
+	width: 100%;
+	align-items: center;
+}
+.make-post textarea {
+	width: 70%;
+	height: 7rem;
+	padding: 0.2rem;
+	background-color: rgb(240, 240, 255);
+	outline: none;
+	border: rgba(40, 10, 125, 0.4) 2px solid;
+	border-radius: 8px;
+	margin-top: 0.5rem;
+	resize: none;
+}
+.make-post button {
+	background-color: rgb(210, 200, 250);
+	border: rgba(220, 210, 250, 0.9) 2px solid;
+	border-radius: 3px;
+	width: 4rem;
+	height: 1.4rem;
+	margin-top: 0.5rem;
+	margin: 0 auto auto auto;
+}
+/*generated posts*/
+.friends-posts {
+	width: 100%;
+	display: felx;
+	flex-direction: column;
+	align-items: center;
+}
+.single-post-bubbl {
+	width: 80%;
+	min-height: 9rem;
+	padding: 0.2rem;
+	background-color: rgb(240, 240, 255);
+	outline: none;
+	border: rgba(20, 20, 155, 0.2) 2px solid;
+	border-radius: 8px;
+	margin: auto;
+	margin-top: 0.5rem;
+	resize: none;
+	margin-bottom: 1rem;
+}
+.top-row {
+	display: flex;
+	flex-direction: row;
+	border-bottom: silver 1px solid;
+}
+.single-post-bubbl img {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+.single-post-bubbl h5 {
+	margin: auto;
+	margin-right: 90%;
+}
+.single-post-content {
+	width: 95%;
+	margin: auto auto -1rem auto;
+	max-height: 50%;
+	
+}
+.bottom-row {
+	display: flex;
+	height: 5rem;
+	width: 100%;
+	flex-direction: row;
+	align-items: flex-end;
+	align-content: space-between;
+
+	
+}
+.voting {
+	display: flex;
+	flex-direction: row;
+	width: 5%;
+	margin-right: 1rem;
+}
+.up {
+	height: 1.2rem;
+	width: 1.2rem;
+	background: url('./assets/uparrowinactive.png') no-repeat;
+	background-position: center;
+	background-size: 0.8rem;
+	
+	margin-left: 0.5rem;
+}
+.up-clicked {
+	height: 1.2rem;
+	width: 1.2rem;
+	background: url('./assets/uparrow.png') no-repeat;
+	background-position: center;
+	background-size: 0.8rem;
+	margin-left: 0.5rem;
+}
+.up:hover {
+	cursor: pointer;
+}
+.down {
+	height: 1.2rem;
+	width: 1.2rem;
+	background: url('./assets/downarrowinactive.png') no-repeat;
+	background-position: center;
+	background-size: 0.8rem;
+}
+.down-clicked {
+	height: 1.2rem;
+	width: 1.2rem;
+	background: url('./assets/downarrow.png') no-repeat;
+	background-position: center;
+	background-size: 0.8rem;
+}
+.down:hover {
+	cursor: pointer;
+}
+.comment {
+	height: 1.2rem;
+	width:95%;
+	background: url('./assets/comment.png') no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+	margin-left: 1rem;
+}
+
+.share {
+	height: 1.6rem;
+	width: 2rem;
+	background: url('./assets/shareicon.png') no-repeat;
+	background-position: center;
+	background-size: 1.5rem;
+	margin-right: 1rem;
+}

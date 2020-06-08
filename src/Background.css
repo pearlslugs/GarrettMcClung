@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+.Background {
+	height: 58%;
+	width: 100vw;
+	border-top: white 3px solid;
+	border-bottom: white 3px solid;
+	background-image: url('./assets/bg2.png');
+	background-color: rgba(9, 9, 15, 0.80);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: enter 0.2s 1;
+}
+.BackgroundAlt {
+	height: 58%;
+	width: 100vw;
+	border-top: white 3px solid;
+	border-bottom: white 3px solid;
+	background-color: rgba(18, 18, 29, 0.80);
+	background-image: url('./assets/bgalt.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow-y: scroll;
+	animation: enter 0.2s 1;
+}
+.BackgroundsecondAlt {
+	height: 58%;
+	width: 100vw;
+	border-top: white 3px solid;
+	border-bottom: white 3px solid;
+	background-color: rgba(18, 18, 29, 0.80);
+	background-image: url('./assets/bgalt.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: enter 0.2s 1;
+}
+.BackgroundsecondAlt form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.BackgroundsecondAlt p {
+	color: white;
+	margin-top: 2rem;
+}
+.BackgroundsecondAlt input {
+	width: 10rem;
+	height: 1rem;
+	padding: 1px;
+}
+.BackgroundsecondAlt textarea {
+	width: 20rem;
+	height: 10rem;
+	border-radius: 5px;
+}
+@keyframes enter {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+.projectOne {
+	height: 40vw;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border-bottom: white 3px solid;
+}
+.bubbl {
+	height: 80%;
+	width: 36%;
+	background: url('./assets/bubblethumb.png') no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	border-radius: 3em;
+	border: white 3px solid;
+	margin: auto 0.5em auto 1em;
+	
+}
+.bubble-text {
+	height: 80%;
+	width: 53%;
+	background: rgba(255, 255, 255, 0.2);
+	margin: auto;
+	border-radius: 3em;
+	border: white 3px solid;
+	text-align: center;
+	color: rgb(160, 160, 255);
+	text-shadow: 2px 1px black;
+	
+}
+.bubbl:hover{
+	cursor: pointer;
+}
+.projectTwo {
+	height: 40vw;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border-bottom: white 3px solid;
+}
+.numas {
+	height: 80%;
+	width: 36%;
+	background: url('./assets/numasthumb.png') no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	border-radius: 3em;
+	border: white 3px solid;
+	margin: auto 1.5em auto 0.5em;
+}
+.numas:hover{
+	cursor: pointer;
+}
+.numas-text {
+	height: 80%;
+	width: 53%;
+	background: rgba(255, 255, 255, 0.2);
+	margin: auto;
+	border-radius: 3em;
+	border: white 3px solid;
+	text-align: center;
+	color: rgb(160, 160, 255);
+	text-shadow: 2px 1px black;
+}
+.projectThree {
+	height: 40vw;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border-bottom: white 3px solid;
+}
+.weather {
+	height: 80%;
+	width: 36%;
+	background: url('./assets/weatherappthumb.png') no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	border-radius: 3em;
+	border: white 3px solid;
+	margin: auto 0.5em auto 1em;
+	
+}
+.weather:hover{
+	cursor: pointer;
+}
+.weather-text {
+	height: 80%;
+	width: 53%;
+	background: rgba(255, 255, 255, 0.2);
+	margin: auto;
+	border-radius: 3em;
+	border: white 3px solid;
+	text-align: center;
+	color: rgb(160, 160, 255);
+	text-shadow: 2px 1px black;
+	
+}
+h4 {
+	width:80%;
+	margin: 2em auto auto auto;
+	font-size: 1.8vh;
+}
+@media (orientation: landscape){
+	.projectOne {
+		height: 28vw;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		border-bottom: white 3px solid;
+	}	
+	.projectTwo {
+		height: 28vw;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		border-bottom: white 3px solid;
+	}
+	.projectThree {
+		height: 28vw;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		border-bottom: white 3px solid;
+}
+h4 {
+	width:80%;
+	margin: 2em auto auto auto;
+	font-size: 1.8vw;
+}
+}
+div:is(.background) {
+	filter: brightness(40%);
+}
+.text {
+	color: white;
+	opacity: 2;
+	filter: brightness(100%);
+	margin: 12% auto;
+	height: 50%;
+}

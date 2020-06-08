@@ -1,0 +1,259 @@
+[
+
+  {
+    "id": 1,
+    "question": "Which of these genres do you like, but listen to the least?",
+    "answers": {
+      "answerOne": "Hip-Hop",
+      "answerTwo": "Metal",
+      "answerThree": "Electronic/pop",
+      "answerFour": "Folk/indie/acoustic"
+    },
+    "values": {
+      "valueOne": "1",
+      "valueTwo": "6",
+      "valueThree": "11",
+      "valueFour": "3000"
+    }
+  },
+  {
+    "id": 2,
+    "question": "Which style of Hip-Hop do you find interesting?",
+    "answers": {
+      "answerOne": "Experimental",
+      "answerTwo": "Noise",
+      "answerThree": "Trap",
+      "answerFour": "Lyric centric"
+    },
+    "values": {
+      "valueOne": "3",
+      "valueTwo": "2",
+      "valueThree": "4",
+      "valueFour": "5"
+    }
+  },
+  {
+    "id": 3,
+    "question": "What type of Hip-Hop do you usually like best?",
+    "answers": {
+      "answerOne": "Old School",
+      "answerTwo": "Aggressive",
+      "answerThree": "Story telling",
+      "answerFour": "Dark"
+    },
+    "values": {
+      "valueOne": "101",
+      "valueTwo": "102",
+      "valueThree": "103",
+      "valueFour": "104"
+    }
+  },
+  {
+    "id": 4,
+    "question": "What tends to be more your style?",
+    "answers": {
+      "answerOne": "High intensity",
+      "answerTwo": "Spacey",
+      "answerThree": "Mellow",
+      "answerFour": "Bombastic"
+    },
+    "values": {
+      "valueOne": "105",
+      "valueTwo": "106",
+      "valueThree": "107",
+      "valueFour": "108"
+    }
+  },
+  {
+    "id": 5,
+    "question": "What vibe do you prefer??",
+    "answers": {
+      "answerOne": "Sad",
+      "answerTwo": "Extreme",
+      "answerThree": "Atmospheric",
+      "answerFour": "goofy"
+    },
+    "values": {
+      "valueOne": "109",
+      "valueTwo": "110",
+      "valueThree": "111",
+      "valueFour": "112"
+    }
+  },
+  {
+    "id": 6,
+    "question": "What type of lyrics do you prefer?",
+    "answers": {
+      "answerOne": "Dark",
+      "answerTwo": "Weird",
+      "answerThree": "Self reflection",
+      "answerFour": "Personal Struggle"
+    },
+    "values": {
+      "valueOne": "113",
+      "valueTwo": "114",
+      "valueThree": "115",
+      "valueFour": "116"
+    }
+  },
+  {
+    "id": 7,
+    "question": "What sub-genre are you most interested in?",
+    "answers": {
+      "answerOne": "Black metal",
+      "answerTwo": "Extreme metal",
+      "answerThree": "Hardcore",
+      "answerFour": "Progressive/Post metal"
+    },
+    "values": {
+      "valueOne": "7",
+      "valueTwo": "8",
+      "valueThree": "9",
+      "valueFour": "10"
+    }
+  },
+  {
+    "id": 8,
+    "question": "What non metal genre do you like most?",
+    "answers": {
+      "answerOne": "Post rock",
+      "answerTwo": "Shoe-gaze",
+      "answerThree": "Post punk",
+      "answerFour": "Progressive/Avant-garde"
+    },
+    "values": {
+      "valueOne": "117",
+      "valueTwo": "118",
+      "valueThree": "119",
+      "valueFour": "120"
+    }
+  },
+  {
+    "id": 9,
+    "question": "What other genre do you like?",
+    "answers": {
+      "answerOne": "Noise",
+      "answerTwo": "Jazz",
+      "answerThree": "Math-core",
+      "answerFour": "None, just metal!"
+    },
+    "values": {
+      "valueOne": "121",
+      "valueTwo": "122",
+      "valueThree": "123",
+      "valueFour": "124"
+    }
+  },
+  {
+    "id": 10,
+    "question": "What style fits you?",
+    "answers": {
+      "answerOne": "Nerdy",
+      "answerTwo": "Mathy",
+      "answerThree": "Noisey",
+      "answerFour": "Dad"
+    },
+    "values": {
+      "valueOne": "125",
+      "valueTwo": "126",
+      "valueThree": "127",
+      "valueFour": "128"
+    }
+  },
+  {
+    "id": 11,
+    "question": "What vibe works for you?",
+    "answers": {
+      "answerOne": "Down tempo",
+      "answerTwo": "Dense and atmospheric",
+      "answerThree": "Colorful",
+      "answerFour": "Layered"
+    },
+    "values": {
+      "valueOne": "129",
+      "valueTwo": "130",
+      "valueThree": "131",
+      "valueFour": "132"
+    }
+  },
+  {
+    "id": 12,
+    "question": "What vibe do you like most?",
+    "answers": {
+      "answerOne": "Mellow",
+      "answerTwo": "Weird",
+      "answerThree": "Energetic",
+      "answerFour": "ambient"
+    },
+    "values": {
+      "valueOne": "12",
+      "valueTwo": "13",
+      "valueThree": "14",
+      "valueFour": "15"
+    }
+  },
+  {
+    "id": 13,
+    "question": "What aspect of music do you most appreciate?",
+    "answers": {
+      "answerOne": "Vocals",
+      "answerTwo": "Synths",
+      "answerThree": "Complexity",
+      "answerFour": "General vibe"
+    },
+    "values": {
+      "valueOne": "133",
+      "valueTwo": "134",
+      "valueThree": "135",
+      "valueFour": "136"
+    }
+  },
+  {
+    "id": 14,
+    "question": "What do you find provocative?",
+    "answers": {
+      "answerOne": "Violence",
+      "answerTwo": "Shocking visuals",
+      "answerThree": "Nonsense",
+      "answerFour": "Comedy"
+    },
+    "values": {
+      "valueOne": "137",
+      "valueTwo": "138",
+      "valueThree": "139",
+      "valueFour": "140"
+    }
+  },
+  {
+    "id": 15,
+    "question": "What genre do you like?",
+    "answers": {
+      "answerOne": "Break-core",
+      "answerTwo": "Avant-garde",
+      "answerThree": "IDM",
+      "answerFour": "Pop"
+    },
+    "values": {
+      "valueOne": "141",
+      "valueTwo": "142",
+      "valueThree": "143",
+      "valueFour": "144"
+    }
+  },
+  {
+    "id": 16,
+    "question": "What do you like most?",
+    "answers": {
+      "answerOne": "Sad vibes",
+      "answerTwo": "Intensity",
+      "answerThree": "Introspection",
+      "answerFour": "Heavy"
+    },
+    "values": {
+      "valueOne": "145",
+      "valueTwo": "146",
+      "valueThree": "147",
+      "valueFour": "148"
+    }
+  }
+]

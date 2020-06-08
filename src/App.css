@@ -1,0 +1,241 @@
+/*global*/
+*{
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	color: white;
+	text-align: center;
+	height: 20%;
+	padding: 0; 
+	margin: 0;
+	
+}
+
+h3 {
+
+}
+.App {
+	height: 100vh;
+	width:100vw;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(14, 14, 24, 0.95);
+	
+}
+
+.Top {
+	height: 15%;
+	width: 100vw;
+	background-color: rgba(14, 14, 24, 0.95);
+}
+.bottom {
+	display:flex;
+	flex-direction:row;
+	height: 15%;
+	width: 100%;
+	margin-top: 1%;
+}
+.twelve-container {
+		margin: auto auto 0 auto;
+		color: white;
+		display: inline;
+		height: 20vh;
+		width: 30vw;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+}
+.twelve {
+	background-image: url('./assets/twelve.png');
+	background-size:50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30vh;
+	width: 30vw;
+}
+.twenty-container {
+		margin: auto auto 0 auto;
+		color: white;
+		display: inline;
+		height: 20vh;
+		width: 30vw;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+}
+.twenty {
+	background-image: url('./assets/twenty.png');
+	background-size:50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30vh;
+	width: 30vw;
+}
+.four-container {
+		margin: auto auto 0 auto;
+		color: white;
+		display: inline;
+		height: 20vh;
+		width: 30vw;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+}
+.four {
+	background-image: url('./assets/four.png');
+	background-size:50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30vh;
+	width: 30vw;
+
+}
+@media (orientation: landscape){
+.bottom {
+	display:flex;
+	flex-direction:row;
+	height: 5%;
+	width: 100%;
+	
+}
+.twelve-container {
+
+		color: white;
+		display: inline;
+		height: 20vh;
+		width: 15vw;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+}
+.twelve {
+	background-image: url('./assets/twelve.png');
+	background-size:50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 15vh;
+	width: 15vw;
+}
+.twenty-container {
+
+		color: white;
+		display: inline;
+		height: 20vh;
+		width: 15vw;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+}
+.twenty {
+	background-image: url('./assets/twenty.png');
+	background-size:50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 15vh;
+	width: 15vw;
+}
+.four-container {
+
+		color: white;
+		display: inline;
+		height: 15vh;
+		width: 15vw;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+}
+.four {
+
+	background-size:50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 15vh;
+	width: 15vw;
+
+}
+}
+.link {
+	color: rgb(120, 140, 230);
+}
+.link:hover {
+	color: rgb(150, 160, 250);
+	text-decoration: underline;
+	animation: grow 3s infinite;
+	cursor: pointer;
+}
+.current:hover{
+	animation: spin 3s 1;
+}
+@keyframes grow {
+
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(1.1);
+	}
+	50% {
+		transform: scale(1);
+	}
+	70% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes nav-button-home-animation {
+	0% {
+		transform: translateY(50%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.nav-button {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 93.5%;
+	bottom: 1%;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	background-color: rgb(128, 128, 180);
+}
+.nav-button:hover {
+	cursor: pointer;
+	background-color: rgb(148, 148, 200);
+}
+.go-home{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 93.5%;
+	bottom: 8%;
+	background: url('./assets/home-button.png') center no-repeat;
+	background-size: 1.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	background-color: rgb(128, 128, 180);
+	animation: nav-button-home-animation 1 0.4s;
+}
+.go-home:hover {
+	cursor: pointer;
+	background-color: rgb(148, 148, 200);
+}
