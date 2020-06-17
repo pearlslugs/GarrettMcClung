@@ -1,3 +1,4 @@
+
 @keyframes wobble {
 
 	0% {
@@ -26,7 +27,7 @@
 	position: absolute;
 	top: 0px;
 	height: 10%;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	flex-direction: row;
 	background: rgba(220, 210, 255, 1);
@@ -38,16 +39,28 @@
 	cursor: pointer;
 	color: rgb(90, 180, 225);
 }
+.active {
+	color: rgb(90, 180, 225);
+}
 .bubbl-content-logo {
 	font-size: 2em;
 	letter-spacing: 0.25em;
 	/*animation: wobble 5s infinite;*/
 	color: rgb(90, 180, 225);
 }
+.user-profile-pic {
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+
+}
 .bubbl-greeting {
 	margin: 0.5rem 1rem;
 	font-size: 1.5rem;
 	margin-top: 6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .make-post {
 	display: flex;
@@ -186,4 +199,144 @@
 	background-position: center;
 	background-size: 1.5rem;
 	margin-right: 1rem;
+}
+/*profile*/
+.whole-page {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+@media (orientation: landscape){
+
+}
+.profile {
+	margin-top: 12vh;
+	max-width: 99vw;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.profile-content {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.profile h1 {
+	color: rgb(147, 38, 247);
+	width: 100vw;
+	border-bottom: black 1px solid;
+	margin-bottom: 1rem;
+}
+.about {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	height: 13rem;
+	background-color: balck;
+	margin-top: 1rem;
+}
+.profile-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 40%;
+	height: 100%;
+	border: silver solid 2px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 4px;
+}
+.profile-left button {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 0.35rem;
+	background-color: rgb(231, 220, 241);
+	border: none;
+}
+#class-button:hover {
+	background-color: rgb(241, 230, 251);
+	border: none;
+}
+.profile-right {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-left: 10%;
+	height: 100%;
+	border: silver solid 2px;
+	border-top-right-radius: 6px;
+	justify-content: center;
+	align-items: center;
+}
+.profile-right button {
+	align-self: center;
+}
+.profile-right p {
+	width: 100%;
+	background-color: rgb(235, 235, 245);
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+@media (orientation: landscape){
+	.profile-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 20%;
+	height: 100%;
+	border: silver solid 2px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 4px;
+}
+.profile-right {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: 5%;
+	height: 100%;
+	border: silver solid 2px;
+	border-top-right-radius: 6px;
+}
+}
+.about h2 {
+	
+}
+.profile img {
+	align-self: center;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+}
+.profile-post-start {
+	margin-top: 1rem;
+}
+.bubbl-back {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+	background: url('./assets/bubblback.png') center no-repeat;
+	background-size: 3rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	animation: nav-button-home-animation 1 0.4s;
+}
+.profile-posts {
+	width: 100%;
+	max-height: 15vh;
+}
+.place-holder {
+	color: black;
+	margin: auto;
+	margin-top: 5rem;
 }

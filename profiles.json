@@ -1,0 +1,51 @@
+"profiles": [
+        {
+		  "id": 1,
+          "username": "Ghosty",
+          "password": "123",
+          "profilePic": "https://www.clipartkey.com/mpngs/m/91-913012_free-clipart-ghosts-19-ghost-image-royalty-free.png",
+          "about": {
+            "general": "Ghost man who eats trash",
+            "hobbies": "Farris wheel fighting",
+            "work": "React.js Man"
+          },
+          "contact": {
+            "phone": "333-333-3333",
+            "email": "ghost@email.com",
+            "website": "website.com"
+          }
+        },
+        {
+		  "id": 2,
+          "username": "Norm All",
+          "password": "123",
+          "profilePic": "https://miro.medium.com/max/2388/1*4sfxttMRO2-KtpwWI9QKHg.png",
+          "about": {
+            "general": "I am a weird fish man",
+            "hobbies": "Goblins",
+            "work": "Stable Man"
+          },
+          "contact": {
+            "phone": "333-333-3335",
+            "email": "Norm@email.com",
+            "website": "website.com"
+          }
+        },
+        {
+		  "id": 3,
+          "username": "Weird Guy",
+          "password": "123",
+          "profilePic": "https://i.kym-cdn.com/entries/icons/facebook/000/016/546/hidethepainharold.jpg",
+          "about": {
+            "general": "I am not weird, that is just my god given name",
+            "hobbies": "eat fish",
+            "work": "Burger Boy"
+          },
+          "contact": {
+            "phone": "333-333-3334",
+            "email": "weird@email.com",
+            "website": "website.com"
+          }
+        }
+      ]
+    },

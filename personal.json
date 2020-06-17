@@ -1,0 +1,102 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "username": "ghosty",
+      "password": "123",
+      "profilePic": "https://www.clipartkey.com/mpngs/m/91-913012_free-clipart-ghosts-19-ghost-image-royalty-free.png",
+      "about": {
+        "general": "Ghost man who eats trash",
+        "hobbies": "Farris wheel fighting",
+        "work": "React.js Man"
+      },
+      "contact": {
+        "phone": "333-333-3333",
+        "email": "ghost@email.com",
+        "website": "website.com"
+      }
+    },
+    {
+      "id": 2,
+      "username": "norm all",
+      "password": "123",
+      "profilePic": "https://miro.medium.com/max/2388/1*4sfxttMRO2-KtpwWI9QKHg.png",
+      "about": {
+        "general": "I am a weird fish man",
+        "hobbies": "Goblins",
+        "work": "Stable Man"
+      },
+      "contact": {
+        "phone": "333-333-3335",
+        "email": "Norm@email.com",
+        "website": "website.com"
+      }
+    },
+    {
+      "id": 3,
+      "username": "weird guy",
+      "password": "123",
+      "profilePic": "https://i.kym-cdn.com/entries/icons/facebook/000/016/546/hidethepainharold.jpg",
+      "about": {
+        "general": "I am not weird, that is just my god given name",
+        "hobbies": "eat fish",
+        "work": "Burger Boy"
+      },
+      "contact": {
+        "phone": "333-333-3334",
+        "email": "weird@email.com",
+        "website": "website.com"
+      }
+    },
+    {
+      "username": "bill",
+      "password": "123",
+      "profilePic": "https://genslerzudansdentistry.com/wp-content/uploads/2015/11/anonymous-user.png",
+      "about": {
+        "general": "none",
+        "hobbies": "none",
+        "work": "none"
+      },
+      "contact": {
+        "phone": "none",
+        "email": "bill@email.com",
+        "website": "none"
+      },
+      "id": 4
+    }
+  ],
+  "bubblPosts": [
+    {
+      "id": 1,
+      "user": "weird guy",
+      "profilePic": "https://i.kym-cdn.com/entries/icons/facebook/000/016/546/hidethepainharold.jpg",
+      "imageUpload": "",
+      "content": "A long black shadow slid across the pavement near their feet and the five Venusians, very much startled, looked overhead. They were barely in time to see the huge gray form of the carnivore before it vanished behind a sign atop a nearby building which bore the mystifying information Pepsi-Cola.",
+      "mood": "normal"
+    },
+    {
+      "id": 2,
+      "user": "norm all",
+      "profilePic": "https://miro.medium.com/max/2388/1*4sfxttMRO2-KtpwWI9QKHg.png",
+      "imageUpload": "",
+      "content": "According to the caption on the bronze marker placed by the Multnomah Chapter of the Daughters of the American Revolution on May 12, 1939, “College Hall (is) the oldest building in continuous use for Educational purposes west of the Rocky Mountains.",
+      "mood": "normal"
+    },
+    {
+      "user": "ghosty",
+      "profilePic": "https://www.clipartkey.com/mpngs/m/91-913012_free-clipart-ghosts-19-ghost-image-royalty-free.png",
+      "imageUpload": "",
+      "content": "hemlo",
+      "mood": "",
+      "id": 3
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  ]
+}

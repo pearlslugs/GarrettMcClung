@@ -21,6 +21,8 @@ function Nav(props) {
 	</div>
 	<div onClick={props.home} className="go-home">
 	</div>
+	<div className="github">
+	</div>
 	</>
   );
 	}
