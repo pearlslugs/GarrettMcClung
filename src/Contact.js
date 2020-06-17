@@ -5,7 +5,7 @@ import axios from 'axios';
 function Contact(props) {
 	useEffect(() => {
 	axios	
-		.get('http://localhost:3002/messages')
+		.get('https://quiet-dawn-89547.herokuapp.com/messages')
 		.then(response => {
 		console.log(response.data)}
 	)}, [])
@@ -21,12 +21,12 @@ function Contact(props) {
 	
 
 		axios
-			.post('http://localhost:3002/messages', submittedObject)
+			.post('https://quiet-dawn-89547.herokuapp.com/messages', submittedObject)
 			.then(response => {
 			console.log(response)
 		})
 		axios	
-			.get('http://localhost:3002/messages')
+			.get('https://quiet-dawn-89547.herokuapp.com/messages')
 			.then(response => {
 				
 				console.log(response)
