@@ -1,5 +1,5 @@
 {
-  "homepage": "http://pearlslugs.github.io/GarrettMcClung",
+  "homepage": "https://pearlslugs.github.io/GarrettMcClung/",
   "name": "personal",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
