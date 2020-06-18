@@ -10,7 +10,7 @@ function Bubblcontent({ user, home, users }) {
 	const [postsMade, setPostsMade] = useState(0);
 			useEffect(() => {
 			axios	
-				.get('http://localhost:3002/bubblposts')
+				.get('https://quiet-dawn-89547.herokuapp.com/bubblposts')
 				.then(response => {
 				console.log(response.data)}
 			)}, [])
@@ -27,12 +27,12 @@ function Bubblcontent({ user, home, users }) {
 				}
 
 		axios
-			.post('http://localhost:3002/bubblposts', postObject)
+			.post('https://quiet-dawn-89547.herokuapp.com/bubblposts', postObject)
 			.then(response => {
 			console.log(response)
 		})
 		axios	
-			.get('http://localhost:3002/bubblposts')
+			.get('https://quiet-dawn-89547.herokuapp.com/bubblposts')
 			.then(response => {
 				setPostsToShow(response.data)
 				console.log(users)
@@ -41,7 +41,7 @@ function Bubblcontent({ user, home, users }) {
 	const [postsToShow, setPostsToShow] = useState([]);
 			
 		useEffect(() => {axios	
-				.get('http://localhost:3002/bubblposts')
+				.get('https://quiet-dawn-89547.herokuapp.com/bubblposts')
 				.then(response => {
 						setPostsToShow(response.data)
 				})

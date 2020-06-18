@@ -11,7 +11,7 @@ function Bubbl(props) {
 
 		useEffect(() => {
 			axios	
-				.get('http://localhost:3002/profiles')
+				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
 						setUsers(response.data)
 						console.log(users)
@@ -19,7 +19,7 @@ function Bubbl(props) {
 		}, []);
 		const refresh = () => {
 						axios	
-				.get('http://localhost:3002/profiles')
+				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
 						setUsers(response.data)
 						console.log(users)

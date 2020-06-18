@@ -5,7 +5,7 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 	console.log(users);
 			useEffect(() => {
 			axios	
-				.get('http://localhost:3002/profiles')
+				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
 				console.log(response.data)}
 			)}, [])
@@ -32,12 +32,12 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 			}
 
 	axios
-		.post('http://localhost:3002/profiles', userObject)
+		.post('https://quiet-dawn-89547.herokuapp.com/profiles', userObject)
 		.then(response => {
 		console.log(response)
     })
 	axios	
-		.get('http://localhost:3002/profiles')
+		.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 		.then(response => {
 				setUsers(response.data)
 				console.log(users)
