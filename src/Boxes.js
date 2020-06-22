@@ -7,12 +7,11 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 			axios	
 				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
-				console.log(response.data)}
+				console.log("!")}
 			)}, [])
 			
 	const addUser = (e) => {
 		if((emailValid) && (signUpUsernameValid) && (signUpPasswordValid)){
-			console.log(signUpUsernameString, signUpPasswordString, emailString);
 			const userObject = {
 		username: createUsername,
 		password: createPassword,
@@ -34,13 +33,12 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 	axios
 		.post('https://quiet-dawn-89547.herokuapp.com/profiles', userObject)
 		.then(response => {
-		console.log(response)
+		goBackButton();
     })
 	axios	
 		.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 		.then(response => {
 				setUsers(response.data)
-				console.log(users)
 	})
 	}}
 
@@ -56,22 +54,47 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 		const validate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		return validate.test(String(email).toLowerCase())
 	}
+	function findFalse( value ) {
+		return value === true;
+	}
+	let checkForDoubleEmail = [];
+	let checkForDoubleUsername = [];
+	const checkEmail = () => {
+		checkForDoubleEmail = users.map(user => {
+			if(user.contact.email === emailString){
+				return false;
+			}
+			else{
+				return true;
+			}
+		})
+	}	
+	const checkUsername = () => {
+		checkForDoubleUsername = users.map(user => {
+			console.log(checkUsername);
+			console.log(user.username, signUpUsernameString.toLowerCase());
+			if(user.username == signUpUsernameString){
+				return false;
+			}
+			else{
+				return true;
+			}
+		})
+	}
 	const validateEmailCheck = (email) => {
-		if(validateEmail(emailString)){
+		if(validateEmail(emailString) && (reg(email))){
 			setEmailValid(true);
-			console.log("works");
 		}
+
 	}
 	const validateSignUpUsernameCheck = (email) => {
 		if(signUpUsernameString != '' && checkForDoubleUsername.every(findFalse)){
 			setSignUpUsernameValid(true);
-			console.log("works");
 		}
 	}
 	const validateSignUpPasswordCheck = (email) => {
 		if(signUpPasswordString != ''){
 			setSignUpUsernameValid(true);
-			console.log("works");
 		}
 	}
 	const greetings = [
@@ -94,13 +117,15 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 	}
 	const emailChange = (e) => {
 		emailString = e.target.value;
+		console.log(emailString);
 		checkEmail();
+		console.log(checkForDoubleEmail);
 		if(checkForDoubleEmail != undefined){
 			if(checkForDoubleEmail.every(findFalse)){
 			setEmailValid(true);
 			setCreateEmail(emailString)
-			}
-			else if(checkForDoubleEmail.every(!findFalse)){
+		}
+			else{
 			setEmailValid(false);
 		}
 	}}
@@ -111,7 +136,7 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 			setSignUpUsernameValid(true);
 			setCreateUsername(signUpUsernameString)
 		}
-		else if(checkForDoubleUsername.every(!findFalse)){
+		else {
 			setSignUpUsernameValid(false);
 		}
 		
@@ -127,17 +152,22 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 		}
 		
 	}
+	const reg = (email) => {
+		const validate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return validate.test(String(email).toLowerCase())
+	}
+
 	const loginButton = () => {
 	axios	
-		.get('http://localhost:3002/profiles')
+		.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 		.then(response => {
 				setUsers(response.data)
-				console.log(users)
 	})
 		setLogin(login + 1)
 	}
 	const signUpButton = () => {
 		setSignUp(signUp + 1)
+		alert("Do not use any personal information here, this is not a secure server and is for demonstration only");
 	}
 	const goBackButton = () => {
 		setSignUp(signUp * 0)
@@ -151,36 +181,10 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 		}
 	})
 	}
-	const findFalse = (value) => value === true;
-	let checkForDoubleEmail = [];
-	let checkForDoubleUsername = [];
-	const checkEmail = () => {
-		checkForDoubleEmail = users.map(user => {
-			console.log(user.contact.email, emailString.toLowerCase());
-			if(user.contact.email === emailString){
-				return false;
-			}
-			else{
-				return true;
-			}
-		})
-	}	
-	const checkUsername = () => {
-		checkForDoubleUsername = users.map(user => {
-			console.log(checkUsername);
-			console.log(user.username, signUpUsernameString.toLowerCase());
-			if(user.username == signUpUsernameString){
-				return false;
-			}
-			else{
-				return true;
-			}
-		})
-	}
 
-	const signUpButtonClick = () => { 
+
+	const signUpButtonClick = () => {
 		addUser();
-		goBackButton();
 	}
 	const enterKeyPress = evt => {
     if (evt.key === "Enter") {

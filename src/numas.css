@@ -75,15 +75,19 @@ color: white;
 }
 .button-one{
 	animation: numas-enter 0.5s 1;
+	cursor: pointer;
 }
 .button-two {
 	animation: numas-enter 0.7s 1;
+	cursor: pointer;
 }
 .button-three {
 	animation: numas-enter 0.9s 1;
+	cursor: pointer;
 }
 .button-four {
 	animation: numas-enter 1.1s 1;
+	cursor: pointer;
 }
 @keyframes numas-enter {
 	0% {
@@ -94,6 +98,7 @@ color: white;
 	}
 }
 button.submit {
+	cursor: pointer;
 	margin-top: 6vh;
 	width: 40%;
 	background: radial-gradient(circle, rgba(178,187,233,1) 30%, rgba(148,187,233,0.7) 100%);

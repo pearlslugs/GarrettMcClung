@@ -177,21 +177,26 @@ function Numas(props) {
 	
 	const buttonNumberSet = (num, letter) => {
 		return () => {
+		setFirst(false);
 		setButtonNumber(num);
 		setButtonLetter(letter);
-		setFirst(false);
 		}
 	}
 	const pressSubmit = () => {
-		submitButton();
-		if(buttonNumber < 100){
+		if(buttonLetter !== ''){
 		setFirst(true);
+		setButtonLetter('');
+		submitButton();
 		}
 	}
 	const submitButton = () => {
 		setNumasIndex(buttonNumber);
-		setButtonLetter('');
 		bigSwitch();
+		console.log(numasIndex);
+		console.log(buttonLetter);
+	}
+	const fakeButton = () => {
+		setFirst(false);
 	}
 if(numasIndex === 0){
 	return (
@@ -209,6 +214,9 @@ if(numasIndex === 0){
 			<button className={(first === true ? 'button-three ' : '') + (buttonLetter === 'c' ? 'active-button' : '')}
 				onClick={buttonNumberSet(AppData[numasIndex].values.valueThree, 'c')}>
 				{AppData[numasIndex].answers.answerThree}</button>
+			<button  className={(first === true ? 'button-four ' : '') + (buttonLetter === 'd' ? 'active-button' : '')}
+				onClick={fakeButton}>
+				</button>
 			<button className="submit" onClick={pressSubmit}>Submit</button>
 			</div>
 		</div>
