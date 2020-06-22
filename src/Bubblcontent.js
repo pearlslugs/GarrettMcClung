@@ -29,14 +29,20 @@ function Bubblcontent({ user, home, users }) {
 		axios
 			.post('https://quiet-dawn-89547.herokuapp.com/bubblposts', postObject)
 			.then(response => {
-			console.log(response)
+				setTimeout(setContentValue(''), 2000);
+				if(page === 0){
+					setPage(3);
+				}
+				if(page === 3){
+					setPage(0);
+				}
+			axios	
+				.get('https://quiet-dawn-89547.herokuapp.com/bubblposts')
+				.then(response => {
+					setPostsToShow(response.data)
 		})
-		axios	
-			.get('https://quiet-dawn-89547.herokuapp.com/bubblposts')
-			.then(response => {
-				setPostsToShow(response.data)
-				console.log(users)
 		})
+
 		}
 	const [postsToShow, setPostsToShow] = useState([]);
 			
@@ -86,7 +92,6 @@ function Bubblcontent({ user, home, users }) {
 	const [contentValue, setContentValue] = useState('');
 	const makePost = () => {
 		addPost()
-		setTimeout(setContentValue(''), 12000);
 	}
 	if(profileView != '' && profileView != user){
 		return(
@@ -94,6 +99,30 @@ function Bubblcontent({ user, home, users }) {
 		)
 	}
 	if(page === 0) {
+  return (
+    <div className="bubbl-content">
+		<div className="bubbl-top-bar">
+			<div className="bubbl-content-logo bubbl-top-bar-content">Bubbl</div>
+			<div className="bubbl-content-home-link bubbl-top-bar-content active">Home</div>
+			<div onClick={changePage(1)} className="bubble-content-friends-link bubbl-top-bar-content">Friends</div>
+			<div onClick={changePage(2)} className="bubbl-content-forum-link bubbl-top-bar-content">Forum</div>
+		</div>
+		<div className="bubbl-greeting">
+			<img className="user-profile-pic" src={userProfilePic}></img>
+			 <Greeting user={user} />
+		</div>
+		<div className="make-post">
+			<textarea onChange={contentChange} value={contentValue}  className={textareaClassChooser()} placeholder="Tell me about it..."></textarea>
+			<button onClick={makePost}>Submit</button>
+		</div>
+		<div>
+			<FriendsPosts user={user} postsToShow={postsToShow} users={users} home={home} profileView={profileView} setProfileView={setProfileView}			/>
+		</div>
+		<Nav home={home} back={back} />
+	</div>
+  );
+}
+	if(page === 3) {
   return (
     <div className="bubbl-content">
 		<div className="bubbl-top-bar">
