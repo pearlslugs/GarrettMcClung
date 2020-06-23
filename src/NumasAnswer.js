@@ -36,7 +36,7 @@ function NumasAnswer(props) {
 				<div className="numas-answer-button">
 					<div className="restart-button-numas" onClick={props.restart}></div><p>Restart</p>
 				</div>
-				<Nav home={props.home} />
+				<Nav home={props.home} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/NumasAnswer.js" />
 			</div>				
 		</div>
 			
