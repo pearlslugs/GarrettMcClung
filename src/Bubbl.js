@@ -14,7 +14,6 @@ function Bubbl(props) {
 				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
 						setUsers(response.data)
-						console.log(users)
 				})
 		}, []);
 		const refresh = () => {
@@ -22,7 +21,6 @@ function Bubbl(props) {
 				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
 						setUsers(response.data)
-						console.log(users)
 				})
 		};
 		const [users, setUsers] = useState([]);
