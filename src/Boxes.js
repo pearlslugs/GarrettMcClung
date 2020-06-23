@@ -69,6 +69,31 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 			}
 		})
 	}	
+	const emailIsGood = () => {
+		if(!reg(createEmail)){
+			alert("email is invalid");
+			setEmailValid(false);
+		}
+		if(emailValid === false){
+			alert("email is taken");
+		}
+	}
+	const userNameIsGood = () => {
+		if(!signUpUsernameValid){
+			alert("username is taken");
+		}
+	}
+	const
+	passwordIsGood = () => {
+		if(!signUpPasswordValid){
+			alert("username must be at least 8 characters");
+		}
+	}
+	const everyThingIsGood = () => {
+		emailIsGood();
+		userNameIsGood();
+		passwordIsGood();
+	}
 	const checkUsername = () => {
 		checkForDoubleUsername = users.map(user => {
 			console.log(checkUsername);
@@ -143,11 +168,11 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 	}
 	const signUpPasswordChange = (e) => {
 		signUpPasswordString = e.target.value;
-		if(signUpPasswordString != ''){
+		if(signUpPasswordString.length > 7){
 			setSignUpPasswordValid(true);
 			setCreatePassword(signUpPasswordString)
 		}
-		else if(signUpPasswordString == ''){
+		else if(signUpPasswordString < 7){
 			setSignUpPasswordValid(false);
 		}
 		
@@ -184,6 +209,7 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 
 
 	const signUpButtonClick = () => {
+		everyThingIsGood()
 		addUser();
 	}
 	const enterKeyPress = evt => {
