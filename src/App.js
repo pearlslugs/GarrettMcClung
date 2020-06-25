@@ -13,24 +13,15 @@ import WeatherApp from './WeatherApp.js';
 function App() {
 	/*this changes which page you are on*/
 	const [index, setIndex] = useState(0);
-	const setToProjects = () => {
-		setIndex((index * 0) + 1);
-	}
 	const setToHome = () => {
 		setIndex(index * 0);
-	}
-	const setToContacts = () => {
-		setIndex((index * 0) + 2);
 	}
 	const changePage = (num) => {
 		setIndex(num);
 	}
 	
 	/*this will dispaly a live project*/
-	const changeProject = (num) => () => {
-		setProjectIndex((projectIndex * 0) + num);
-		}
-	
+
 	const [projectIndex, setProjectIndex] = useState(0);
 	const home = () => {
 		setProjectIndex(projectIndex * 0);

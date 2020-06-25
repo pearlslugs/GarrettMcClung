@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import NumasJson from './NumasAnswers.json';
 import './NumasAnswers.css';
 import Nav from './Nav.js';
@@ -12,12 +12,6 @@ function NumasAnswer(props) {
 		spec: NumasJson[props.song].Spotify
 	}
 	const [album, setAlbum] = useState(player.base + player.spec);
-	
-	
-	const logBug = () => {
-	console.log(album);
-	}
-
   return (
     <div className="NumasAnswer">
 		<div className="numas-answers-text">
@@ -30,7 +24,7 @@ function NumasAnswer(props) {
 				</div>
 			</div>
 			<div className="player">
-				<iframe src={album} width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<iframe title="spotify" src={album} width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 			</div>	
 			<div className="bottom-buttons">	
 				<div className="numas-answer-button">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './WeatherApp.css';
 import Nav from './Nav.js';
 import axios from 'axios';
@@ -103,7 +103,7 @@ function WeatherApp(props) {
 		</div>
 			) : (' ')} 
 		</main>
-		<Nav home={props.home}/>
+		<Nav home={props.home} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/WeatherApp.js"/>
     </div>
   );
 }

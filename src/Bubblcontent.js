@@ -7,7 +7,6 @@ import Greeting from './Greeting';
 import axios from 'axios';
 
 function Bubblcontent({ user, home, users }) {
-	const [postsMade, setPostsMade] = useState(0);
 			useEffect(() => {
 			axios	
 				.get('https://quiet-dawn-89547.herokuapp.com/bubblposts')
@@ -118,7 +117,7 @@ function Bubblcontent({ user, home, users }) {
 		<div>
 			<FriendsPosts user={user} postsToShow={postsToShow} users={users} home={home} profileView={profileView} setProfileView={setProfileView}			/>
 		</div>
-		<Nav home={home} back={back} />
+		<Nav home={home} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/Bubblcontent.js" back={back} />
 	</div>
   );
 }
@@ -142,7 +141,7 @@ function Bubblcontent({ user, home, users }) {
 		<div>
 			<FriendsPosts user={user} postsToShow={postsToShow} users={users} home={home} profileView={profileView} setProfileView={setProfileView}			/>
 		</div>
-		<Nav home={home} back={back} />
+		<Nav home={home} back={back} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/Bubblcontent.js" />
 	</div>
   );
 }
