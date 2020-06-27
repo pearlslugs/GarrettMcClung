@@ -6,7 +6,8 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 			axios	
 				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
-			)}, [])
+				})
+			})
 			
 	const addUser = (e) => {
 		if((emailValid) && (signUpUsernameValid) && (signUpPasswordValid)){

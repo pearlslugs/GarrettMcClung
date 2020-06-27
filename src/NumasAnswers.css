@@ -48,7 +48,7 @@ iframe {
 	filter: brightness(140%);
 }
 .bottom-buttons {
-	margin-top: 16%;
+	margin-top: 5rem;
 	display: flex;
 	flex-direction: row;
 	height: 15vh;

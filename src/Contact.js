@@ -7,7 +7,7 @@ function Contact(props) {
 	axios	
 		.get('https://quiet-dawn-89547.herokuapp.com/messages')
 		.then(response => {
-		console.log(""
+		console.log("")}
 	)}, [])
 			
 	const submitForm = (e) => {
@@ -24,6 +24,12 @@ function Contact(props) {
 			.post('https://quiet-dawn-89547.herokuapp.com/messages', submittedObject)
 			.then(response => {
 			console.log("")
+		})
+		axios	
+			.get('https://quiet-dawn-89547.herokuapp.com/messages')
+			.then(response => {
+				
+				console.log("")
 		})
 		setTimeout(setDone(true), 5000);
 		}
@@ -69,6 +75,7 @@ function Contact(props) {
 			setMessageValidation(-1)
 		}
 		setMessage(messageString);
+		console.log(message);
 	}
 	const validateEmail = (email) => {
 		const validate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
