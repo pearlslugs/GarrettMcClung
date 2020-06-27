@@ -21,7 +21,6 @@ function WeatherApp(props) {
         .then(result => {
           setWeather(result);
           setQuery('');
-          console.log(result);
         });
     }
   }

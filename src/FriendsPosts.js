@@ -20,7 +20,6 @@ function FriendsPosts({users, user, nav, home, profileView, setProfileView, post
 	function compare(a, b) {
 		const idA = parseInt(a.id);
 		const idB = parseInt(b.id);
-		console.log(idA);
 		
 		let comparison = 0;
 		if(idA < idB){
@@ -32,7 +31,6 @@ function FriendsPosts({users, user, nav, home, profileView, setProfileView, post
 	return comparison
 	}
 	const order = postsToShow.sort(compare);
-	console.log(order);
 	return (
 	<div className="friends-posts">
 	{order.map(friendPost =>

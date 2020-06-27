@@ -251,6 +251,11 @@ h3 {
 	background-color: rgb(128, 128, 180);
 	animation: nav-button-home-animation 1 0.6s;
 }
+.github:hover {
+	cursor: pointer;
+	background-color: rgb(148, 148, 200);
+}
+
 .go-home:hover {
 	cursor: pointer;
 	background-color: rgb(148, 148, 200);

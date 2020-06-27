@@ -11,7 +11,7 @@ function Bubblcontent({ user, home, users }) {
 			axios	
 				.get('https://quiet-dawn-89547.herokuapp.com/bubblposts')
 				.then(response => {
-				console.log(response.data)}
+				console.log("")}
 			)}, [])
 			
 	const addPost = (e) => {
@@ -56,7 +56,6 @@ function Bubblcontent({ user, home, users }) {
 	const [profileView, setProfileView] = useState('');
 	const userPost = (e) => {
 		userPostValue = e.target.value;
-		console.log(userPostValue)
 		setProfileView(userPostValue);
 	}
 	const changePage = (num) => () => {
@@ -68,7 +67,6 @@ function Bubblcontent({ user, home, users }) {
 		
 	const textareaClassChooser = () => {
 		if(userPostValue !== ''){
-			console.log('yes');
 			return 'textarea'
 		}
 	}
@@ -80,7 +78,6 @@ function Bubblcontent({ user, home, users }) {
 	let profilePic
 	let userProfilePic;
 	const userProfilePicChooser = users.forEach(profile => {
-		console.log(profile, profile.username, user);
 		if(profile.username == user){
 			userProfilePic = profile.profilePic;
 		}

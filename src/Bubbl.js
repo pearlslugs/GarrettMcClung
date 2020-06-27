@@ -48,7 +48,7 @@ function Bubbl(props) {
 			<Header title={title} />
 			<Boxes userLogin={userLogin} setUsers={setUsers} setUser={setUser} users={users} />
 		</div>
-		<Nav home={props.home} />
+		<Nav home={props.home} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/Bubbl.js" />
     </div>
 	
   );

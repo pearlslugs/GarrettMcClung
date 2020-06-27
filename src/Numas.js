@@ -166,7 +166,6 @@ function Numas(props) {
 	setSong(47);
 	break;
 		}
-		console.log(song, 'song');
 	}
 	
 	const returnHome = () => {
@@ -192,8 +191,6 @@ function Numas(props) {
 	const submitButton = () => {
 		setNumasIndex(buttonNumber);
 		bigSwitch();
-		console.log(numasIndex);
-		console.log(buttonLetter);
 	}
 	const fakeButton = () => {
 		setFirst(false);
@@ -221,7 +218,7 @@ if(numasIndex === 0){
 			</div>
 		</div>
 		<div className="numas-bottom">
-			<Nav home={props.home} />
+			<Nav home={props.home} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/Numas.js" />
 		</div>
 	</div>
   );
@@ -251,7 +248,7 @@ if(numasIndex === 0){
 		</div>
 		<div className="numas-bottom">
 		</div>
-		<Nav home={props.home} />
+		<Nav home={props.home} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/Numas.js" />
 	</div>
   );
 }

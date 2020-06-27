@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
-	console.log(users);
 			useEffect(() => {
 			axios	
 				.get('https://quiet-dawn-89547.herokuapp.com/profiles')
 				.then(response => {
-				console.log("!")}
 			)}, [])
 			
 	const addUser = (e) => {
@@ -96,8 +94,6 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 	}
 	const checkUsername = () => {
 		checkForDoubleUsername = users.map(user => {
-			console.log(checkUsername);
-			console.log(user.username, signUpUsernameString.toLowerCase());
 			if(user.username == signUpUsernameString){
 				return false;
 			}
@@ -142,9 +138,7 @@ function Boxes({ userLogin, setUser, users, setUsers, refresh }) {
 	}
 	const emailChange = (e) => {
 		emailString = e.target.value;
-		console.log(emailString);
 		checkEmail();
-		console.log(checkForDoubleEmail);
 		if(checkForDoubleEmail != undefined){
 			if(checkForDoubleEmail.every(findFalse)){
 			setEmailValid(true);

@@ -4,21 +4,18 @@ import Nav from './Nav';
 import ProfileRight from './ProfileRight';
 
 function Profile({profileView, users, home, back, postsToShow}) { 
-console.log(profileView)
+
 	const [who, setWho] = useState('');
 	const [done, setDone] = useState(false);
 	const [left, setLeft] = useState(-1);
 	let currentProfile;
 	let contacts;
 	const setCurrentProfile = users.forEach(user => {
-		console.log(user.username, profileView);
 		if(user.username == profileView) {
-			console.log(user);
 			currentProfile = user;
 			contacts = user.contact;
 		}
 	})
-	console.log(who, "viewing this profile");
 	if(done === false){
 	setWho(currentProfile);
 	setDone(true);
@@ -44,7 +41,6 @@ console.log(profileView)
 		setUpArrow('up');
 		setDownArrow('down-clicked');
 	}
-	//console.log(contacts.phone, "who");
 if(left !== -1){
 	return (
 	<div>
@@ -155,7 +151,7 @@ if(left !== -1){
 			</div>
 			<div className="bubbl-back" onClick={returnToDash}></div>
 		</div>
-		<Nav home={home} />
+		<Nav home={home} link="https://github.com/pearlslugs/GarrettMcClung/blob/master/src/Profile.js" />
 
 	</div>
 	)

@@ -30,17 +30,14 @@ function App() {
 	const bubbl = () => {
 		setProjectIndex((projectIndex * 0) + 1);
 	}
-	const numas = () => {
-		console.log('numas');
+	const numas = () => {;
 		setProjectIndex((projectIndex * 0) + 2);
 		}
 	const weatherApp = () => {
-		console.log("weather");
 		setProjectIndex((projectIndex * 0) + 3);
 	}
 	/*begin conditional rendering of protfolio page*/
   if(index === 0 && projectIndex === 0){
-	  console.log(index);
 	    return (
     <div className="App">
 		<Top />
@@ -50,7 +47,6 @@ function App() {
   );
   }
   if(index === 1 && projectIndex === 0){
-	  console.log(index);
 	    return (
     <div className="App">
 		<Top />
@@ -60,7 +56,6 @@ function App() {
   );
   }
    if(index === 2 && projectIndex === 0){
-	  console.log(index);
 	    return (
     <div className="App">
 		<Top />

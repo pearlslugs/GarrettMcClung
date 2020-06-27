@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import Nav from './Nav';
 
 function ProfileRight({ who, contacts, left}) { 
