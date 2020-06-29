@@ -61,6 +61,10 @@
 	padding: 2px;
 	border-radius: 1px;
 }
+.Background h3 {
+	color: white;
+	margin-top: 0.7rem;
+}
 .BackgroundsecondAlt textarea {
 	width: 20rem;
 	height: 10rem;
@@ -79,6 +83,49 @@
 }
 .BackgroundsecondAlt .red {
 	color: rgb( 255, 100, 120);
+}
+.social {
+	display: flex;
+	flex-direction: row;
+	width: 40%;
+	height: 3rem;
+	margin: auto;
+	margin-top: 1rem;
+}
+.social a{
+	margin: auto;
+}
+.facebook {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('./assets/facebook.png') center no-repeat;
+	background-size: 1.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	background-color: white;
+	margin: auto;
+	cursor: pointer;
+}
+.twitter {
+	display: flex;
+	align-items: center;
+	border-radius: 50%;
+	justify-content: center;
+	background: url('./assets/twitter.png') center no-repeat;
+	background-size: 1.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	background-color: white;
+	margin: auto;
+	cursor: pointer;
+}
+.facebook:hover {
+	background-color: rgb(235, 245, 255);
+}
+.twitter:hover {
+	background-color: rgb(235, 245, 255);
 }
 @keyframes enter {
   0%   { opacity: 0; }
