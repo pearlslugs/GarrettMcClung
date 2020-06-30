@@ -10,10 +10,10 @@ function Background() {
 	<h3>garrettmcclung1@gmail.com</h3>
 	<div className="social">
 	<a href="https://www.facebook.com/gary.mcclung.12" target="_blank" rel="noopener noreferrer">
-		<div className="twitter"></div>
+		<div className="facebook"></div>
 	</a>
 		<a href="https://twitter.com/pearlslugs" target="_blank" rel="noopener noreferrer">
-			<div className="facebook"></div>
+			<div className="twitter"></div>
 		</a>
 	</div>
     </div>
