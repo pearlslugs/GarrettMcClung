@@ -15,6 +15,7 @@
 	background-image: url('./assets/numasbg.png');
 	display: flex;
 	flex-direction: column;
+	overflow-y: scroll;
 }
 .numas-top{
 	height: 22%;

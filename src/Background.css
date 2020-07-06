@@ -43,6 +43,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	animation: enter 0.2s 1;
+	overflow-y: scroll;
 }
 .BackgroundsecondAlt form {
 	width: 100%;
@@ -66,8 +67,9 @@
 	margin-top: 0.7rem;
 }
 .BackgroundsecondAlt textarea {
-	width: 20rem;
+	width: 18.2rem;
 	height: 10rem;
+	padding: 0.5rem;
 	border-radius: 5px;
 }
 .BackgroundsecondAlt button {
@@ -267,7 +269,7 @@ div:is(.background) {
 	filter: brightness(40%);
 }
 .text-front-page{
-	margin-top: 7rem;
+	margin-top: 17%;
 }
 #under-text-front-page{
 	color: white;
