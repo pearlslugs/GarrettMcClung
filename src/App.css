@@ -283,3 +283,7 @@ h3 {
 	text-decoration: underline;
 	background: none;
 }
+
+.hidden {
+	display: none !important;
+	}

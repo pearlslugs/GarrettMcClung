@@ -198,7 +198,7 @@ function Numas(props) {
 if(numasIndex === 0){
 	return (
 	<div className="numas-project">
-	<div className="numas-top"><div className="logo"></div><h1 className="numas-live-text">Numas</h1><div className="logo"></div></div>
+	<div className="numas-top"><div className="logo"></div><h5 className="numas-live-text">Numas</h5><div className="logo"></div></div>
     <div className="main">
 			<div className="question">{AppData[numasIndex].question}</div>
 			<div className="answers">
@@ -211,7 +211,7 @@ if(numasIndex === 0){
 			<button className={(first === true ? 'button-three ' : '') + (buttonLetter === 'c' ? 'active-button' : '')}
 				onClick={buttonNumberSet(AppData[numasIndex].values.valueThree, 'c')}>
 				{AppData[numasIndex].answers.answerThree}</button>
-			<button  className={(first === true ? 'button-four ' : '') + (buttonLetter === 'd' ? 'active-button' : '')}
+			<button className='hidden'
 				onClick={fakeButton}>
 				</button>
 			<button className="submit" onClick={pressSubmit}>Submit</button>
@@ -227,7 +227,7 @@ if(numasIndex === 0){
 	if(numasIndex < 99){
   return (
 	<div className="numas-project">
-	<div className="numas-top"><div className="logo"></div><h1 className="numas-live-text">Numas</h1><div className="logo"></div></div>
+	<div className="numas-top"><div className="logo"></div><h5 className="numas-live-text">Numas</h5><div className="logo"></div></div>
     <div className="main">
 			<div className="question">{AppData[numasIndex].question}</div>
 			<div className="answers">
